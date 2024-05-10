@@ -1,7 +1,11 @@
 #!/usr/bin/python3
+"""
+square class
+"""
+
 
 class Square():
-"""Class Square"""
+    """Class Square"""
     width = 0
     height = 0
 
@@ -19,11 +23,12 @@ class Square():
         return (self.width * 2) + (self.height * 2)
 
     def __str__(self):
+        """return string"""
         return "{}/{}".format(self.width, self.height)
 
 
 if __name__ == "__main__":
-"""test my classe"""
+    """test my classe"""
     s = Square(width=12, height=9)
     print(s)
     print(s.area_of_my_square())
